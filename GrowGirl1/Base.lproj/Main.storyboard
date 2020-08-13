@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GrowGirl1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GrowGirl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,21 +26,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-cA-Kb7">
-                                <rect key="frame" x="101" y="726" width="213" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYz-x8-W6d">
+                                <rect key="frame" x="76" y="783" width="263" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="25"/>
-                                <state key="normal" title="Tap to continue">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="20"/>
+                                <state key="normal" title="Continue to Main Menu">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BuC-gn-eeF" kind="presentation" id="EVR-N7-Y24"/>
+                                    <segue destination="jj2-o0-iBG" kind="show" id="0Qr-sS-t4u"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93804901839999999" green="0.90631020070000001" blue="0.87677663559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +53,7 @@
             <objects>
                 <viewController id="BuC-gn-eeF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oq5-kB-n42">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you feeling today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gND-AA-Y46">
@@ -61,11 +63,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-vF-392">
-                                <rect key="frame" x="83" y="426" width="248" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.50065067939999996" green="0.74117551810000004" blue="0.45991069449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On a scale from 1-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fu-6I-00R">
                                 <rect key="frame" x="118" y="254" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -87,14 +84,87 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-vF-392">
+                                <rect key="frame" x="83" y="426" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.50065067939999996" green="0.74117551810000004" blue="0.45991069449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.81326682989786436" blue="0.59254391410067009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="P0t-LD-bFT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aac-c9-z0q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZ7-LT-rbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882.60869565217399" y="103.79464285714285"/>
+        </scene>
+        <!--Back to Home Screen-->
+        <scene sceneID="JkJ-KB-9ko">
+            <objects>
+                <viewController id="jj2-o0-iBG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EIM-67-Y6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How can we help you today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmx-FR-wwy">
+                                <rect key="frame" x="40" y="55" width="358" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmJ-8P-gKp">
+                                <rect key="frame" x="58" y="144" width="313" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find Online Resources">
+                                    <color key="titleColor" red="0.97204142810000005" green="0.94920009370000002" blue="0.86287689209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iu-l5-nO0">
+                                <rect key="frame" x="69" y="242" width="301" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <state key="normal" title="Find Local Resources">
+                                    <color key="titleColor" red="0.97204142810000005" green="0.94920009370000002" blue="0.86287689209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnj-YD-gaC">
+                                <rect key="frame" x="92" y="339" width="244" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <state key="normal" title="Join a Discussion">
+                                    <color key="titleColor" red="0.97204142810000005" green="0.94920009370000002" blue="0.86287689209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsr-hZ-Mtv">
+                                <rect key="frame" x="54" y="442" width="320" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <state key="normal" title="Contact a Professional">
+                                    <color key="titleColor" red="0.97204142810000005" green="0.94920009370000002" blue="0.86287689209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-JX-q6J">
+                                <rect key="frame" x="80" y="537" width="278" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <state key="normal" title="Breathing Execrises">
+                                    <color key="titleColor" red="0.97204142810000005" green="0.94920009370000002" blue="0.86287689209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50701349969999998" green="0.62752455470000001" blue="0.58231914039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="939-fw-rqS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back to Home Screen" id="Vcj-hG-uha"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKs-8w-dIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="795.53571428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yOg-fN-heU">
@@ -116,6 +186,7 @@
                         <color key="tintColor" red="1" green="0.90732099751254014" blue="0.88924036468007173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="csp-Vf-w4f"/>
                     </view>
+                    <navigationItem key="navigationItem" id="I4k-eO-vqQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RE-c2-f7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
