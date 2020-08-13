@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  DiscussionViewController.swift
 //  GrowGirl1
 //
 //  Created by Camila Esparza on 8/13/20.
@@ -8,12 +8,19 @@
 
 import UIKit
 
-class MapViewController: UIViewController {
+class DiscussionViewController: UIViewController {
 
+    @IBOutlet weak var textBox: UITextField!
+    @IBOutlet weak var hello2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func postButton(_ sender: UIButton) {
+        if let newTitle = textBox.text {
+            hello2.text = newTitle
+        }
     }
     
 
