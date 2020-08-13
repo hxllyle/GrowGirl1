@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GrowGirl1.xcodeproj">
+      location = "self:/Users/hollyle/Desktop/GrowGirl1/GrowGirl.xcodeproj">
    </FileRef>
 </Workspace>

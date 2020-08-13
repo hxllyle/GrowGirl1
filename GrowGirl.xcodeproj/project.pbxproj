@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F97DDE5224E470B900C97F63 /* GrowGirl1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowGirl1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97DDE5224E470B900C97F63 /* GrowGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97DDE5524E470B900C97F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97DDE5724E470B900C97F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F97DDE5924E470B900C97F63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		F97DDE5324E470B900C97F63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F97DDE5224E470B900C97F63 /* GrowGirl1.app */,
+				F97DDE5224E470B900C97F63 /* GrowGirl.app */,
 				F97DDE6B24E470BB00C97F63 /* GrowGirl1Tests.xctest */,
 				F97DDE7624E470BB00C97F63 /* GrowGirl1UITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = GrowGirl1;
 			productName = GrowGirl1;
-			productReference = F97DDE5224E470B900C97F63 /* GrowGirl1.app */;
+			productReference = F97DDE5224E470B900C97F63 /* GrowGirl.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F97DDE6A24E470BB00C97F63 /* GrowGirl1Tests */ = {
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F97DDE4D24E470B900C97F63 /* Build configuration list for PBXProject "GrowGirl1" */;
+			buildConfigurationList = F97DDE4D24E470B900C97F63 /* Build configuration list for PBXProject "GrowGirl" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -444,8 +444,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.examplehehe.GrowGirl1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.examplehehe.GrowGirl;
+				PRODUCT_NAME = GrowGirl;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,8 +461,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.examplehehe.GrowGirl1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.examplehehe.GrowGirl;
+				PRODUCT_NAME = GrowGirl;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,7 +551,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F97DDE4D24E470B900C97F63 /* Build configuration list for PBXProject "GrowGirl1" */ = {
+		F97DDE4D24E470B900C97F63 /* Build configuration list for PBXProject "GrowGirl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F97DDE7D24E470BB00C97F63 /* Debug */,
