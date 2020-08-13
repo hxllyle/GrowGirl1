@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D042079624E5A0D6000DD953 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042079524E5A0D6000DD953 /* MainMenuViewController.swift */; };
+		D042079824E5A275000DD953 /* LocalResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042079724E5A275000DD953 /* LocalResourcesViewController.swift */; };
+		D042079A24E5A321000DD953 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042079924E5A321000DD953 /* MapViewController.swift */; };
 		F97DDE5624E470B900C97F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97DDE5524E470B900C97F63 /* AppDelegate.swift */; };
 		F97DDE5824E470B900C97F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97DDE5724E470B900C97F63 /* SceneDelegate.swift */; };
 		F97DDE5A24E470B900C97F63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97DDE5924E470B900C97F63 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D042079524E5A0D6000DD953 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		D042079724E5A275000DD953 /* LocalResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResourcesViewController.swift; sourceTree = "<group>"; };
+		D042079924E5A321000DD953 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F97DDE5224E470B900C97F63 /* GrowGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97DDE5524E470B900C97F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97DDE5724E470B900C97F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				F97DDE5524E470B900C97F63 /* AppDelegate.swift */,
 				F97DDE5724E470B900C97F63 /* SceneDelegate.swift */,
 				F97DDE5924E470B900C97F63 /* ViewController.swift */,
+				D042079524E5A0D6000DD953 /* MainMenuViewController.swift */,
+				D042079724E5A275000DD953 /* LocalResourcesViewController.swift */,
+				D042079924E5A321000DD953 /* MapViewController.swift */,
 				F97DDE5B24E470B900C97F63 /* Main.storyboard */,
 				F97DDE6124E470BA00C97F63 /* Assets.xcassets */,
 				F97DDE6324E470BA00C97F63 /* LaunchScreen.storyboard */,
@@ -262,10 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D042079824E5A275000DD953 /* LocalResourcesViewController.swift in Sources */,
 				F97DDE6024E470B900C97F63 /* GrowGirl1.xcdatamodeld in Sources */,
+				D042079624E5A0D6000DD953 /* MainMenuViewController.swift in Sources */,
 				F97DDE5A24E470B900C97F63 /* ViewController.swift in Sources */,
 				F97DDE5624E470B900C97F63 /* AppDelegate.swift in Sources */,
 				F97DDE5824E470B900C97F63 /* SceneDelegate.swift in Sources */,
+				D042079A24E5A321000DD953 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
