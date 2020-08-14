@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -456,6 +456,9 @@
                                 <state key="normal" title="loneliness" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Eue-Vk-ub5" kind="show" id="XG5-7l-oTi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2I-kU-ZXw">
                                 <rect key="frame" x="88" y="463" width="239" height="73"/>
@@ -465,6 +468,9 @@
                                 <state key="normal" title="anxiety" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Rhw-r9-YR2" kind="show" id="R9f-og-As7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTw-qQ-TTI">
                                 <rect key="frame" x="88" y="578" width="233" height="71"/>
@@ -521,6 +527,9 @@
                                 <state key="normal" backgroundImage="return" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jVy-SS-n6F" kind="show" id="gd7-xF-pQe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anxiety" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-EQ-RSC">
                                 <rect key="frame" x="124" y="84" width="175" height="71"/>
@@ -577,7 +586,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5WZ-K9-tvL" kind="presentation" id="aFa-Jt-vaC"/>
+                                    <segue destination="5WZ-K9-tvL" kind="show" id="0zD-fs-jTr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-MW-yTb">
@@ -587,11 +596,15 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                 <state key="normal" title="Coping + Dealing" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QqA-vV-zo3" kind="show" id="QrH-QW-I8H"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.792156862745098" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="NMw-s6-qt2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e8h-NH-KEP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpF-5D-VQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -615,7 +628,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygD-ml-0ka">
                                 <rect key="frame" x="27" y="159" width="365" height="510"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">☆ National Alliance on Mental Illness
+                                <string key="text">☆ National Alliance on Mental Illness
 
 ☆ Anxiety and Depression Association of America
 
@@ -627,7 +640,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
 
 ☆ American Psychiatric Association
 
-☆ Anxiety and Depression Association of America</mutableString>
+☆ Anxiety and Depression Association of America</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -640,7 +653,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rhw-r9-YR2" kind="presentation" id="H5O-HW-n9S"/>
+                                    <segue destination="Rhw-r9-YR2" kind="show" id="qLW-6m-Z0T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd2-QA-HKk">
@@ -651,13 +664,14 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QqA-vV-zo3" kind="presentation" id="gfa-uW-idS"/>
+                                    <segue destination="QqA-vV-zo3" kind="show" id="JTr-yB-q6q"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.51764705882352935" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="WT0-l2-1QP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KNf-0N-gAW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lri-9T-QCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -681,7 +695,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-N1-BXR">
                                 <rect key="frame" x="49" y="146" width="317" height="549"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">☆ Before anything else, stop and breathe
+                                <string key="text">☆ Before anything else, stop and breathe
 
 ☆ 5 Senses Strategy: notice 5 things that you can see and name them out loud, notice 4 things you can touch and take the time to feel those items, notice 3 things you can hear and name them out loud, notice 2 things you can smell and name those things out loud, and finally notice 1 thing that you can taste
 
@@ -689,20 +703,11 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
 
 ☆ Arrive to meetings early so you can meet people one-by-one as they arrive
 
-☆ Stay up-to-date on current events so you can make small talk</mutableString>
+☆ Stay up-to-date on current events so you can make small talk</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxZ-iH-QsO">
-                                <rect key="frame" x="49" y="40" width="61" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="return" catalog="system"/>
-                                <connections>
-                                    <segue destination="5WZ-K9-tvL" kind="presentation" id="sCY-J8-u2J"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cg-b3-qdg">
                                 <rect key="frame" x="99" y="737" width="217" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -711,13 +716,23 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                     <color key="titleColor" red="0.51764705882352935" green="0.6470588235294118" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jVy-SS-n6F" kind="presentation" id="ayn-xx-aYa"/>
+                                    <segue destination="jVy-SS-n6F" kind="show" id="NIG-10-Fje"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxZ-iH-QsO">
+                                <rect key="frame" x="20" y="40" width="61" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="return" catalog="system"/>
+                                <connections>
+                                    <segue destination="Rhw-r9-YR2" kind="show" id="Da2-fz-bcv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51764705882352935" green="0.6470588235294118" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="90g-xL-lkF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GyX-fV-HOT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsZ-fn-edi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -826,26 +841,18 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
             </objects>
             <point key="canvasLocation" x="2749.275362318841" y="177.45535714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--National Alliance-->
         <scene sceneID="Uhd-8z-BFJ">
             <objects>
-                <viewController id="Efh-0r-BkF" sceneMemberID="viewController">
+                <viewController id="Efh-0r-BkF" customClass="NationalAlliance" customModule="GrowGirl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VwQ-Cb-ZoD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education+ Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-EI-nv3">
-                                <rect key="frame" x="20" y="58" width="386" height="51"/>
+                                <rect key="frame" x="14" y="139" width="386" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-gJ-Gjp">
-                                <rect key="frame" x="20" y="117" width="374" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">☆  National Alliance on Mental Illness  ☆  Anxiety and Depression Association of America  ☆ National Institute of Mental Health  ☆ Centers for Disease Control and Prevention Division of Mental Health  ☆ American Psychological Association</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -872,6 +879,37 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                                     <segue destination="9d2-pQ-pBq" kind="show" id="u8H-Cf-xn7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLn-YU-ept">
+                                <rect key="frame" x="20" y="215" width="350" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="☆  National Alliance on Mental Illness">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resourceThing:" destination="Efh-0r-BkF" eventType="touchUpInside" id="ea7-xU-pVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nct-cR-BKK">
+                                <rect key="frame" x="20" y="278" width="350" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="☆  National Institute of Mental Health">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resourceThing:" destination="Efh-0r-BkF" eventType="touchUpInside" id="yaw-hN-7eg"/>
+                                    <action selector="secondButton:" destination="Efh-0r-BkF" eventType="touchUpInside" id="dKU-wS-gkc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpk-gJ-Gjp">
+                                <rect key="frame" x="26" y="152" width="374" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">  ☆  Anxiety and Depression Association of America  ☆ Centers for Disease Control and Prevention Division of Mental Health  ☆ American Psychological Association</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94146854710000005" green="0.52389785688590707" blue="0.39198869932032221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="09y-Ew-u7L"/>
@@ -1049,6 +1087,237 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
             <point key="canvasLocation" x="1460.8695652173915" y="1643.9732142857142"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="CDX-s4-t15">
+            <objects>
+                <viewController id="Eue-Vk-ub5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSg-aD-w44">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loneliness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZY-LV-NOi">
+                                <rect key="frame" x="111" y="95" width="193" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="38"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need Help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCC-xX-xlR">
+                                <rect key="frame" x="111" y="371" width="194" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-Yp-9nn">
+                                <rect key="frame" x="25" y="424" width="364" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">☆ National Helpline: 1-800-662-HELP(4357)
+SAMHSA’s National Helpline is completely confidential, free, 24-hour-a-day, 365-day-a-year, information service for individuals dealing with mental issues.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01S-Bz-tIL">
+                                <rect key="frame" x="25" y="524" width="326" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">☆ Crisis Text Line: Text HOME to 7417141 to connect with a Crisis Counselor.
+A live, trained Crisis Counselor receives the text and responds, helping you move from a hot moment to a cool moment.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP5-co-877">
+                                <rect key="frame" x="36" y="704" width="304" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" red="0.94146854710000005" green="0.41299662149999999" blue="0.29822899879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Education and Resources" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SJ4-QQ-3Mo" kind="show" id="yHD-eJ-pVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-g2-qPo">
+                                <rect key="frame" x="15" y="47" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="return" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jVy-SS-n6F" kind="show" id="aWH-03-Tsu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-fw-Yvz">
+                                <rect key="frame" x="25" y="137" width="364" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">☆ Research indicates that loneliness is more dangerous than obesity and as damaging to health as smoking 15 cigarettes a day, therefore being both physically and mentally damaging.
+
+☆ While nearly half of older adults in the US experience some degree of loneliness, it is also common among a variety of age groups.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDB-XS-Dsn">
+                                <rect key="frame" x="36" y="748" width="304" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" red="0.94901960780000005" green="0.51764705879999995" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Management" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0cH-af-j5P" kind="show" id="O8f-hO-nzm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.74117647058823533" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ndr-W4-Emg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G2C-fK-L9w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K80-3Z-oZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597.1014492753625" y="1580.3571428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="akb-sL-NWy">
+            <objects>
+                <viewController id="SJ4-QQ-3Mo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Nc-aq-0L4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkz-ba-OlF">
+                                <rect key="frame" x="20" y="49" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="return" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Eue-Vk-ub5" kind="show" id="TAB-1o-KSD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education + Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg9-86-1B7">
+                                <rect key="frame" x="20" y="155" width="387" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObV-3m-NiF">
+                                <rect key="frame" x="93" y="721" width="228" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.50660109539999998" green="0.7223786485" blue="0.66133643529999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Management" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0cH-af-j5P" kind="show" id="Q3N-KK-HTL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-b8-V2V">
+                                <rect key="frame" x="49" y="155" width="365" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">☆ National Alliance on Mental Health
+
+☆ Halfofus
+
+☆ VolunteerMarch
+
+☆ MeetUp
+
+☆ Campaign To End Loneliness
+
+☆ Band Back Together</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67125963184931503" green="0.71254280821917804" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O0h-Yz-NVM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gSF-83-DsZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRJ-Yk-vHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="1561"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1cA-Ph-342">
+            <objects>
+                <viewController id="0cH-af-j5P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Upf-PN-S18">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPi-Ts-DE3">
+                                <rect key="frame" x="12" y="59" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="return" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Eue-Vk-ub5" kind="show" id="Y9s-5Y-z0t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9D-9B-fm6">
+                                <rect key="frame" x="99" y="96" width="217" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-UH-7tM">
+                                <rect key="frame" x="49" y="141" width="317" height="615"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">☆ Find out why and when you are feeling lonely
+
+☆ Drop someone you haven’t talked to in a while a message
+
+☆ Volunteer in places like your local animal shelter, church, or hospital
+
+☆ Join threads and discussions on the internet for a start
+
+☆ Find news hobbies that other people enjoy as well
+
+☆ Write down your thoughts and challenge those that are unhelpful
+
+☆ Change the scene around you
+
+☆ Join online and offline communities
+
+☆ Listen to podcasts or music</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-mh-yiv">
+                                <rect key="frame" x="99" y="757" width="217" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.92941176469999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back to Menu" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" red="0.51764705879999995" green="0.64705882349999999" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jVy-SS-n6F" kind="show" id="M7L-dc-qkZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.792156862745098" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="F1l-1m-2b8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MbN-Vb-FUb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGO-le-aGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4104.347826086957" y="1564.9553571428571"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="l7A-B1-EEm">
             <objects>
                 <viewController id="EVS-bD-hBv" sceneMemberID="viewController">
@@ -1130,7 +1399,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UyT-8w-vQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492" y="1659"/>
+            <point key="canvasLocation" x="2406" y="2290"/>
         </scene>
         <!--Discussion View Controller-->
         <scene sceneID="oBI-i5-mOH">
@@ -1207,7 +1476,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ln-bA-frM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3402.898550724638" y="1658.7053571428571"/>
+            <point key="canvasLocation" x="3135" y="2290"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="lqK-ya-T6Y">
@@ -1298,14 +1567,17 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5aV-GO-0Sl"/>
-        <segue reference="dbi-Gy-dr7"/>
+        <segue reference="Q3N-KK-HTL"/>
+        <segue reference="Y9s-5Y-z0t"/>
+        <segue reference="pEb-yd-qvy"/>
         <segue reference="tnV-EQ-zy7"/>
         <segue reference="u8H-Cf-xn7"/>
         <segue reference="Mxk-XW-gyg"/>
         <segue reference="BVY-y7-Cn9"/>
-        <segue reference="sCY-J8-u2J"/>
-        <segue reference="OCD-4R-VKb"/>
-        <segue reference="HFS-Jg-hrv"/>
+        <segue reference="JTr-yB-q6q"/>
+        <segue reference="Da2-fz-bcv"/>
+        <segue reference="NIG-10-Fje"/>
+        <segue reference="CoB-PW-Rci"/>
         <segue reference="eT8-dt-pvR"/>
     </inferredMetricsTieBreakers>
     <resources>

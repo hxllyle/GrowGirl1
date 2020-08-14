@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66991B7824E643FD0057C0ED /* NationalAlliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66991B7724E643FD0057C0ED /* NationalAlliance.swift */; };
 		D004404A24E5EC6000CAB5FA /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004404924E5EC6000CAB5FA /* DiscussionViewController.swift */; };
 		D042079624E5A0D6000DD953 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042079524E5A0D6000DD953 /* MainMenuViewController.swift */; };
 		D042079824E5A275000DD953 /* LocalResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D042079724E5A275000DD953 /* LocalResourcesViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66991B7724E643FD0057C0ED /* NationalAlliance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalAlliance.swift; sourceTree = "<group>"; };
 		D004404924E5EC6000CAB5FA /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		D042079524E5A0D6000DD953 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		D042079724E5A275000DD953 /* LocalResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResourcesViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				D042079524E5A0D6000DD953 /* MainMenuViewController.swift */,
 				D042079724E5A275000DD953 /* LocalResourcesViewController.swift */,
 				F97DDE5B24E470B900C97F63 /* Main.storyboard */,
+				66991B7724E643FD0057C0ED /* NationalAlliance.swift */,
 				F97DDE6124E470BA00C97F63 /* Assets.xcassets */,
 				F97DDE6324E470BA00C97F63 /* LaunchScreen.storyboard */,
 				F97DDE6624E470BA00C97F63 /* Info.plist */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66991B7824E643FD0057C0ED /* NationalAlliance.swift in Sources */,
 				D042079824E5A275000DD953 /* LocalResourcesViewController.swift in Sources */,
 				F97DDE6024E470B900C97F63 /* GrowGirl1.xcdatamodeld in Sources */,
 				D004404A24E5EC6000CAB5FA /* DiscussionViewController.swift in Sources */,
