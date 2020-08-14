@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GrowGirl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="growgirl1" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-gO-9UF">
@@ -42,6 +42,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="trz-13-H4U"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -409,6 +410,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="7QY-rv-5xG" kind="presentation" id="1vv-ch-bla"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7A-jn-ZLv">
+                                <rect key="frame" x="138" y="725" width="145" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0022206763699999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oDg-Ej-5N0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1152,9 +1164,9 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-fw-Yvz">
                                 <rect key="frame" x="25" y="137" width="364" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">☆ Research indicates that loneliness is more dangerous than obesity and as damaging to health as smoking 15 cigarettes a day, therefore being both physically and mentally damaging.
+                                <string key="text">☆ Research indicates that loneliness is more dangerous than obesity and as damaging to health as smoking 15 cigarettes a day, therefore being both physically and mentally damaging.
 
-☆ While nearly half of older adults in the US experience some degree of loneliness, it is also common among a variety of age groups.</mutableString>
+☆ While nearly half of older adults in the US experience some degree of loneliness, it is also common among a variety of age groups.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1275,7 +1287,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-UH-7tM">
                                 <rect key="frame" x="49" y="141" width="317" height="615"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">☆ Find out why and when you are feeling lonely
+                                <string key="text">☆ Find out why and when you are feeling lonely
 
 ☆ Drop someone you haven’t talked to in a while a message
 
@@ -1291,7 +1303,7 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
 
 ☆ Join online and offline communities
 
-☆ Listen to podcasts or music</mutableString>
+☆ Listen to podcasts or music</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1569,14 +1581,14 @@ A live, trained Crisis Counselor receives the text and responds, helping you mov
         <segue reference="5aV-GO-0Sl"/>
         <segue reference="Q3N-KK-HTL"/>
         <segue reference="Y9s-5Y-z0t"/>
-        <segue reference="pEb-yd-qvy"/>
+        <segue reference="dbi-Gy-dr7"/>
         <segue reference="tnV-EQ-zy7"/>
         <segue reference="u8H-Cf-xn7"/>
         <segue reference="Mxk-XW-gyg"/>
         <segue reference="BVY-y7-Cn9"/>
         <segue reference="JTr-yB-q6q"/>
         <segue reference="Da2-fz-bcv"/>
-        <segue reference="NIG-10-Fje"/>
+        <segue reference="OCD-4R-VKb"/>
         <segue reference="CoB-PW-Rci"/>
         <segue reference="eT8-dt-pvR"/>
     </inferredMetricsTieBreakers>
